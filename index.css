@@ -1,0 +1,334 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #023047;
+    color: white;
+}
+#signin:hover{
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 80px;
+    padding-top: 25px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+.clicked{
+    color: #ffbd00;
+    border-bottom: #ffb703 3px solid;
+}
+nav a{
+    color: white;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+nav a:hover{
+    color: #ffbd00;
+    border-bottom: #ffb703 3px solid;
+}
+.navend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+}
+.signin{
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: white;
+    border:none;
+    cursor: pointer;
+    transition: 300ms;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 10px;
+}
+.signin:hover{
+    border: 1px solid black;
+    background: #ffb703;
+}
+
+.mainkid{
+    text-align: center;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+}
+.mainkid input{
+    margin-top: 30px;
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Open sans';
+}
+.mainkid button{
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ffbd00;
+    transition: 100ms;
+}
+.mainkid button:hover{
+    color: rgb(32, 14, 14);
+}
+.mainkid button:active{
+    transform: scale(0.9);
+}
+
+.mainimage{
+    background-image: url(https://www.pngmart.com/files/15/Smiling-Business-Man-Standing-PNG-Photos.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 300px;
+    margin-right: 180px;
+}
+.mainlist{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: larger;
+}
+.mainlist li{
+    padding: 6px;
+    border-radius: 100%;
+    width: 20px;
+    color: white;
+    align-items: center;
+    transition: 300ms;
+}
+.mainlist li:hover{
+    transform: scale(110%);
+    cursor: pointer;
+}
+#main3item{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #1c2541;
+    gap: 10px;
+    padding-top: 20px;
+}
+#main2{
+    background-color: #9e0059;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+#main2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+    font-weight: 100;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+#main3{
+    height: 90vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: black;
+}
+.main3shop{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    height: 25vh;
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 300ms;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+.main3shop:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+.main3image{
+    display: flex;
+    background-color: black;
+    height: 100%;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main3text{
+    font-family: "Open sans";
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.qtysize{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+    font-size: 10px;
+}
+
+#paypalplace{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paypal{
+    background-color: transparent;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 70px;
+}
+#mainimage{
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+
+#trans{
+    height: 10vh;
+    background-color: #023047;
+}
+
+#main4{
+    height: 110vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+#main4text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+#main4service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 350px;
+    width: 900px;
+    margin-top: 40px;
+}
+.services{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#footer{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footerinfo{
+    margin-top: 20px;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+#footerplace{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerplace{
+    height: 30px;
+    width: 310px;
+    display: flex;
+    outline: white solid 1px;
+}
+.footerplace2{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    outline: white solid 1px;
+}
+.footerplace3{
+    height: 30px;
+    display: flex;
+    outline: white solid 1px;
+}
+
+
+#copyright{
+    margin-top: 20px;
+}

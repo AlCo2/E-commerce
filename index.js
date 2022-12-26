@@ -3,7 +3,21 @@ let shop = document.getElementById("shop");
 let social = document.getElementById("social");
 let about = document.getElementById("about");
 let main = document.getElementById("mainimage");
+let navshow = document.getElementById("navbtn");
 
+let ul1 = document.getElementById("ul1");
+let ul2 = document.getElementById("ul2");
+let navhide = document.getElementById("navbtn2");
+function shownav(){
+    ul1.classList.replace("hide", "responsiv");
+    navshow.style = "display: none";
+    navhide.style = "display:inline;padding-right: 10px;";
+}
+function hidenav(){
+    ul1.classList.replace("responsiv", "hide");
+    navshow.style = "display:inline";
+    navhide.style = "display:none";
+}
 
 home.classList.add("clicked");
 home.onclick = function home() {

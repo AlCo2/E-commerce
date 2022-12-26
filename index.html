@@ -12,14 +12,19 @@
 <body>
     <div class="nav">
         <nav>
-            <div><h1 style="font-size: 20px;font-weight: 600;font-family: 'Poppins';">AlCo2</h1></div>
+            <div class="navbrand"><h1 style="font-size: 20px;font-weight: 600;font-family: 'Poppins';">AlCo2</h1></div>
             <div>
-                <ul>
+                <div>
+                    <a id="navbtn" onclick="shownav()"><i class="fa-solid fa-bars"></i></a>
+                    <a id="navbtn2" onclick="hidenav()"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+                <ul class="hide" id="ul1">
                     <li><a href="#main" id="home">Home</a></li>
                     <li><a href="#main3" id="shop">Shop</a></li>
                     <li><a href="#main4" id="social">Services</a></li>
                     <li><a href="#footer" id="about">About us</a></li>
                 </ul>
+                
             </div>
             <div class="navend">
                 <a href=""><i class="fa-solid fa-phone"></i></a>
@@ -31,12 +36,12 @@
     </div>
     <div id="main">
         <div class="mainkid">
-            <p style="font-size: 10px; font-weight: 300; font-family: 'Poppins';">Up to 50% Discounts <i class="fa-solid fa-tag"></i></p>
-            <p style="font-weight: 900;font-family: 'Poppins';font-size: 30px;color: white;"><t style="color: #ffbd00;">Welcome</t> To My <br> Beutiful Shop</p>
-            <p class="maintext" style="font-weight: 100;font-family: 'Roboto';">We provide All The Items You Need</p>
+            <p class="litlep">Up to 50% Discounts <i class="fa-solid fa-tag"></i></p>
+            <p class="bigp"><t style="color: #ffbd00;">Welcome</t> To My <br> Beutiful Shop</p>
+            <p class="maintext" style="font-weight: 100;font-family: 'Roboto';">We provide All Items You Need</p>
             <div>
                 <input placeholder="Enter Your Gmail" type="text" name="" id="">
-                <button>enter</button>
+                <button class="mainbtn">enter</button>
             </div>
         </div>
         <div id="mainimage">
@@ -97,7 +102,7 @@
                     <p style="padding-right: 20px">Free</p>
                 </div>
                 <div style="padding-top: 10px;">
-                    <button style="width: 230px;height: 30px;cursor: pointer;font-weight: 300;font-family: 'Open sans';">Checkout</button>
+                    <button class="paybutton" >Checkout</button>
                 </div>
             </div>
         </div>
@@ -110,74 +115,74 @@
         </div>
         <div id="main4service">
             <div class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-child"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div  class="menwomen">
                     <p>Child</p>
                 </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
             <div style="background-color: #0d357b; color: white;" class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-person"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div class="menwomen">
                     <p>Men</p>
                 </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
             <div class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-car"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div class="menwomen">
                     <p>Cars</p>
                 </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
             <div class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-home"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div class="menwomen">
                     <p>House</p>
                 </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
             <div style="background-color:#ff006e; color: white;" class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-person-dress"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div class="menwomen">
                     <p>Women</p>
-                </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                </div>w
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
             <div class="services">
-                <div style="display: flex;justify-content: space-between;align-items: center;width: 100%;padding-top: 10px;">
+                <div class="abdou">
                     <i style="padding-left: 50px" class="fa-solid fa-dog"></i>
                     <i style="padding-right: 15px;" class="fa-solid fa-bars"></i>
                 </div>
-                <div style="width: 100%; font-size: 15px;padding-left:100px;padding-top: 10px;font-weight: 700;font-family: 'Poppins';">
+                <div class="menwomen">
                     <p>Animals</p>
                 </div>
-                <div style="width:80%;font-size: 10px;font-family: 'Open sans';font-weight: 500;">
+                <div class="textservice">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum molestiae doloribus eos. Eius eligendi porro rem repellendus. Modi, esse non.</p>
                 </div>
             </div>
